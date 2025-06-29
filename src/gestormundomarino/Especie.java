@@ -1,6 +1,6 @@
 package gestormundomarino;
 
-public class Especie {
+public class Especie extends Dato {
     public int idEspecie;
     public String nombre;
     public String nombreCientifico;
