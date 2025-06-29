@@ -1,6 +1,6 @@
 package gestormundomarino;
 
-public class Zona {
+public class Zona extends Dato {
     public int idZona;
     public String nombre;
 
