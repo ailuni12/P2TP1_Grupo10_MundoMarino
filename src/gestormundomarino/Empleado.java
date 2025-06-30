@@ -3,21 +3,22 @@ package gestormundomarino;
 import java.time.LocalDate;
 
 public class Empleado extends Dato {
-    public int idEmpleado;
     public String nombre;
     public String direccion;
     public int telefono;
     public LocalDate fechaIngreso;
 
-    public Empleado(int idEmpleado, String nombre, String direccion, int telefono, LocalDate fechaIngreso) {
-        this.idEmpleado = idEmpleado;
+    public Empleado(int id, String nombre, String direccion, int telefono, LocalDate fechaIngreso) {
+        super(id);
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.fechaIngreso = fechaIngreso;
     }
 
-    public Empleado() {
+    @Override
+    public void mostrar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

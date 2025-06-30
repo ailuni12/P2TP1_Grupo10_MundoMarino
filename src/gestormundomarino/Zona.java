@@ -1,16 +1,16 @@
 package gestormundomarino;
 
 public class Zona extends Dato {
-    public int idZona;
     public String nombre;
 
-    public Zona(int idZona, String nombre) {
-        this.idZona = idZona;
+    public Zona(int id, String nombre) {
+        super(id);
         this.nombre = nombre;
     }
 
-    public Zona() {
+    @Override
+    public void mostrar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-    
     
 }

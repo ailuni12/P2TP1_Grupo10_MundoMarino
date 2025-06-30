@@ -9,7 +9,8 @@ public class Animal extends Dato {
     public String nombre;
     public String descripcion;
 
-    public Animal(int idEspecie, int idHabitat, int idCuidador, String nombre, String descripcion) {
+    public Animal(int id, int idEspecie, int idHabitat, int idCuidador, String nombre, String descripcion) {
+        super(id);
         this.idEspecie = idEspecie;
         this.idHabitat = idHabitat;
         this.idCuidador = idCuidador;
@@ -17,7 +18,9 @@ public class Animal extends Dato {
         this.descripcion = descripcion;
     }
 
-    public Animal() {
+    @Override
+    public void mostrar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     

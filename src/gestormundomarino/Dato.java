@@ -1,9 +1,13 @@
 
 package gestormundomarino;
 
-public class Dato {
+public abstract class Dato {
+    public int id;
 
-    public Dato() {
+    public Dato(int id) {
+        this.id = id;
     }
+
+    public abstract void mostrar();
     
 }

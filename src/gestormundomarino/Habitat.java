@@ -2,21 +2,22 @@
 package gestormundomarino;
 
 public class Habitat extends Dato {
-    public int idHabitat;
     public String nombre;
     public String clima;
     public String vegetacion;
     public String continente;
 
-    public Habitat(int idHabitat, String nombre, String clima, String vegetacion, String continente) {
-        this.idHabitat = idHabitat;
+    public Habitat(int id, String nombre, String clima, String vegetacion, String continente) {
+        super(id);
         this.nombre = nombre;
         this.clima = clima;
         this.vegetacion = vegetacion;
         this.continente = continente;
     }
 
-    public Habitat() {
+    @Override
+    public void mostrar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }
