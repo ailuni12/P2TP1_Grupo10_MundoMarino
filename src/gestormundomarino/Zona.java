@@ -2,10 +2,12 @@ package gestormundomarino;
 
 public class Zona extends Dato {
     public String nombre;
+    public double extension;
 
-    public Zona(int id, String nombre) {
+    public Zona(int id, String nombre, double extension) {
         super(id);
         this.nombre = nombre;
+        this.extension = extension;
     }
 
     @Override
