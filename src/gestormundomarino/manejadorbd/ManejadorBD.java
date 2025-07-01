@@ -1,10 +1,12 @@
 package gestormundomarino.manejadorbd;
 
+import gestormundomarino.datos.Dato;
 import java.util.ArrayList;
 
 public interface ManejadorBD {
-    public void alta(String tabla, String columna, ArrayList datoAL);
-    public void baja(String tabla, String columna, String id);
-    public void modif(String tabla, String columna, String id);
-    public ArrayList consulta(String tabla, String columna, String valor);
+    public void alta(String tabla, Dato dato);
+    public void baja(String tabla, String id);
+    public void modif(String tabla, Dato original, Dato nuevo);
+    public ArrayList consulta(String tabla, String id);
+    public void crearListaDatos(String tabla);
 }

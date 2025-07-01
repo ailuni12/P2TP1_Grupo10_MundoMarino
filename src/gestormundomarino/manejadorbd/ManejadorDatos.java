@@ -4,7 +4,7 @@ import gestormundomarino.datos.Dato;
 import java.util.ArrayList;
 import java.util.Map;
 
-public class ManejadorDatos {
+public class ManejadorDatos implements ManejadorBD {
     private Map<String, ListaDatos> listasDatos;
     
     public void alta(String nombreLista, Dato dato) {
