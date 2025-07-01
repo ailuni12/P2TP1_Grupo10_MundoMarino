@@ -1,13 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package gestormundomarino.manejadorbd;
 
-/**
- *
- * @author user
- */
-public class FilaAL {
-    
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class FilaAL {
+    private ArrayList<String> filaAL;
+
+    public FilaAL(String... campos) {
+        filaAL.addAll(Arrays.asList(campos));
+    }
+
+    public String get(int indice) {
+        return filaAL.get(indice);
+    }
+
+    public void add(String... campos) {
+        filaAL.addAll(Arrays.asList(campos));
+    }
+
+    public ArrayList<String> getFilaAL() {
+        return filaAL;
+    }
 }
