@@ -61,4 +61,9 @@ public class ManejadorDatos {
     public ArrayList<Dato> consulta(String nombreLista, Integer valor) {
         return consulta(nombreLista, valor.toString());
     }
+
+    public void crearListaDatos(String nombreLista) {
+        ListaDatos lista = new ListaDatos(nombreLista);
+        listasDatos.put(nombreLista, lista);
+    }
 }

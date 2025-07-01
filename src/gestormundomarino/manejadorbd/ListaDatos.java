@@ -8,6 +8,11 @@ class ListaDatos {
     private String nombre;
     private ArrayList<Dato> listaDatos;
 
+    public ListaDatos(String n) {
+        nombre = n;
+        listaDatos = new ArrayList<Dato>();
+    }
+
     public String getNombre() {
         return nombre;
     }
