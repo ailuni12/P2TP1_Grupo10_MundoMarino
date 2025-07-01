@@ -1,9 +1,11 @@
 package gestormundomarino;
 
+//Itinerario ACargoDe Guia
+//CLASE "RELACIONAL"
 
 public class ACargoDe extends Dato {
-    public int idGuia;
-    public int idItinerario;
+    private int idGuia;
+    private int idItinerario;
 
     public ACargoDe(int id, int idGuia, int idItinerario) {
         super(id);
@@ -11,8 +13,23 @@ public class ACargoDe extends Dato {
         this.idItinerario = idItinerario;
     }
 
+    // Getters
+    public int getIdGuia() { return idGuia; }
+    public int getIdItinerario() { return idItinerario; }
+
+    // Setter
+    public void asignar(int idGuia, int idItinerario) {
+        this.idGuia = idGuia;
+        this.idItinerario = idItinerario;
+    }
+
     @Override
     public void mostrar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.printf(
+            "Relación ID %d: Itinerario (ID %d) está a cargo de Guía (ID %d)%n",
+            identificar(),
+            idItinerario,
+            idGuia
+        );
     }
 }

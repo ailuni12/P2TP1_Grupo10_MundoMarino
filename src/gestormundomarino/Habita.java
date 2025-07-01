@@ -1,6 +1,8 @@
 package gestormundomarino;
 
 //Especie Habita Habitat
+//CLASE "RELACIONAL"
+
 public class Habita extends Dato {
     public int idEspecie;
     public int idHabitat;
