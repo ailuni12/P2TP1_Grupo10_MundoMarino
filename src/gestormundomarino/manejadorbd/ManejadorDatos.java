@@ -53,21 +53,10 @@ public class ManejadorDatos {
         }
     }
     
-    /**
-     * Método que busca un valor (String) en una columna de una lista (ListaDatos).
-     * 1- halla la lista según su nombre.
-     * 2- halla el índice correspondiente a la columna según su nombre.
-     * 3- busca el valor en las datos (datosAL de ListaDatos) según el índice.
-     * 4- devuelve las datos halladas (un ArrayList de tipo Dato).
-     * 
-     * @param nombreLista nombre de la lista a consultar (ListaDatos)
-     * @param id id del dato a consultar
-     * @return fila(s) hallada(s) o ArrayList vacío (ArrayList de Dato)
-     */
     public ArrayList<Dato> consulta(String nombreLista, String id) {
-        ListaDatos lista = listasDatos.get(nombreLista);// **1**
+        ListaDatos lista = listasDatos.get(nombreLista);
 
-        return lista.buscarDatos(id);// **4**
+        return lista.buscarDatos(id);
     }
     public ArrayList<Dato> consulta(String nombreLista, Integer valor) {
         return consulta(nombreLista, valor.toString());
