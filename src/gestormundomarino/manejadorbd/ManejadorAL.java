@@ -6,21 +6,23 @@ import java.util.Map;
 
 public class ManejadorAL {
     private Map<String, TablaAL> tablasAL;
+    
     public void alta(String nombreTabla, String nombreColumna, Dato dato) {
         int res;
         TablaAL tabla = tablasAL.get(nombreTabla);
 
-        if(tabla != null) {// si se halló la tabla
-            res = tabla.agregarFila(new FilaAL(dato.listar());// si se agregó la fila, devuelve 1
-            if(res == 1){
-                System.out.println("Se agregó un registro a la tabla.");
-            } else {
-                System.out.println("No se pudo agregar el registro a la tabla.");
-            }
-        } else {
-            System.out.println("No se halló la tabla.");
-        }
+//        if(tabla != null) {// si se halló la tabla
+//            res = tabla.agregarFila(new FilaAL(dato.listar());// si se agregó la fila, devuelve 1
+//            if(res == 1){
+//                System.out.println("Se agregó un registro a la tabla.");
+//            } else {
+//                System.out.println("No se pudo agregar el registro a la tabla.");
+//            }
+//        } else {
+//            System.out.println("No se halló la tabla.");
+//        }
     }
+
     public void baja(String nombreTabla, String nombreColumna, String id) {
         int res;
         TablaAL tabla = tablasAL.get(nombreTabla);
