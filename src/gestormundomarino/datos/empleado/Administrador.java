@@ -1,16 +1,5 @@
 package gestormundomarino.datos.empleado;
 
-<<<<<<< HEAD
-import java.time.LocalDate;
-
-
-public class Administrador extends Empleado {
-
-    public Administrador(int id, String nombre, String direccion, int telefono, LocalDate fechaIngreso, int idAdministrador) {
-        super(id, nombre, direccion, telefono, fechaIngreso);
-    }
-    
-=======
 public class Administrador extends Empleado {
 
     public Administrador(int id, String nombre, String direccion, int telefono) {
@@ -30,5 +19,4 @@ public class Administrador extends Empleado {
             getFechaIngreso().toString()
         );
     }
->>>>>>> 87dee340a64b0f4f41aadc8ffc909ad15d554f6c
 }

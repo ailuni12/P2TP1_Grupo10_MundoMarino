@@ -1,19 +1,6 @@
 package gestormundomarino.datos;
 
 import java.time.LocalTime;
-<<<<<<< HEAD
-
-
-public class Itinerario extends Dato {
-    public String descRecorrido;
-    public double longitud; //distancia en km
-    public int maxVisitantes;
-    public int numEspecies;
-    public LocalTime horaInicio;
-    public LocalTime horaFin;
-
-    public Itinerario(int id, String descRecorrido, double longitud, int maxVisitantes) {
-=======
 import java.time.format.DateTimeFormatter;
 
 public class Itinerario extends Dato {
@@ -26,22 +13,10 @@ public class Itinerario extends Dato {
 
     public Itinerario(int id, String descRecorrido, double longitud, int maxVisitantes, 
                      int numEspecies, LocalTime horaInicio, LocalTime horaFin) {
->>>>>>> 87dee340a64b0f4f41aadc8ffc909ad15d554f6c
         super(id);
         this.descRecorrido = descRecorrido;
         this.longitud = longitud;
         this.maxVisitantes = maxVisitantes;
-<<<<<<< HEAD
-    }
-
-    @Override
-    public void mostrar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-
-}
-=======
         this.numEspecies = numEspecies;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
@@ -73,4 +48,3 @@ public class Itinerario extends Dato {
         );
     }
 }
->>>>>>> 87dee340a64b0f4f41aadc8ffc909ad15d554f6c
