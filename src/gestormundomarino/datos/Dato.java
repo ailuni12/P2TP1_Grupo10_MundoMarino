@@ -1,5 +1,5 @@
 
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public abstract class Dato {
     //datos private final se asignan durante la creacion y no seran modificables

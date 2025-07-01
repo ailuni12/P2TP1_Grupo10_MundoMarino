@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 //Zona Incluye Habitat
 //CLASE "RELACIONAL"

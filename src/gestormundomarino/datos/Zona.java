@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public class Zona extends Dato {
     private final String nombre;

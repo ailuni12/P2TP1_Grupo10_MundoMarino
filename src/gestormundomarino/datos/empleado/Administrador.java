@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos.empleado;
 
 public class Administrador extends Empleado {
 

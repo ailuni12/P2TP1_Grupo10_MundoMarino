@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 //Especie Habita Habitat
 //CLASE "RELACIONAL"

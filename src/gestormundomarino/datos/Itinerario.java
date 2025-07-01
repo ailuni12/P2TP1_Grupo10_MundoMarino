@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

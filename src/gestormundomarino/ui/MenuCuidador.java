@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.ui;
 
 import java.util.List;
 

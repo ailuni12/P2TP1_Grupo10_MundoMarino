@@ -1,5 +1,13 @@
 package gestormundomarino;
 
+import gestormundomarino.datos.empleado.Guia;
+import gestormundomarino.datos.empleado.Administrador;
+import gestormundomarino.datos.empleado.Cuidador;
+import gestormundomarino.datos.Especie;
+import gestormundomarino.datos.Dato;
+import gestormundomarino.datos.Zona;
+import gestormundomarino.datos.Animal;
+import gestormundomarino.datos.Habitat;
 import java.util.ArrayList;
 
 public class Main {

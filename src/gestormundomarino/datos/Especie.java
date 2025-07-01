@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public class Especie extends Dato {
     //datos private final se asignan durante la creacion y no seran modificables

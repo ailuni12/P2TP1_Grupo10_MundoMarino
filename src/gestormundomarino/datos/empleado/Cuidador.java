@@ -1,15 +1,15 @@
-package gestormundomarino;
+package gestormundomarino.datos.empleado;
 
-public class Guia extends Empleado {
-    
-    public Guia(int id, String nombre, String direccion, int telefono) {
+public class Cuidador extends Empleado {
+
+    public Cuidador(int id, String nombre, String direccion, int telefono) {
         super(id, nombre, direccion, telefono);
     }
 
     @Override
     public void mostrar() {
         System.out.printf(
-            "Guía ID %d: %s%n" +
+            "Cuidador ID %d: %s%n" +
             "  Contacto: %s | Tel: %d%n" +
             "  Fecha ingreso: %s%n",
             identificar(),

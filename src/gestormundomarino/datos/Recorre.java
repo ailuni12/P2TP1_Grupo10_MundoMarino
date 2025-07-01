@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 //Itinerario Recorre Zona
 //CLASE "RELACIONAL"

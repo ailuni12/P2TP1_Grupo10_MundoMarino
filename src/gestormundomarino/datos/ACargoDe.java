@@ -1,4 +1,4 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
 //Itinerario ACargoDe Guia
 //CLASE "RELACIONAL"

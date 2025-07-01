@@ -1,5 +1,5 @@
 
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public class Habitat extends Dato {
     private final String nombre;
