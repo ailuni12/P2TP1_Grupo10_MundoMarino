@@ -25,7 +25,7 @@ public class Main {
 
         // habitats
         parquemundomarino.add(new Habitat(3, "Oceano Abierto", "Templado", "Algas marinas", "Antartida"));
-        parquemundomarino.add(new Habitat(4, "Costas Rocosas", "Frío", "Kelp", "Sudamerica"));
+        parquemundomarino.add(new Habitat(4, "Costas Rocosas", "Frio", "Kelp", "Sudamerica"));
         parquemundomarino.add(new Habitat(5, "Aguas Profundas", "Frio", "Plancton", "Global"));
 
         // especies
@@ -46,7 +46,7 @@ public class Main {
 
         // empleados
         parquemundomarino.add(new Guia(15, "Jose Martinez", "Calle del Mar 123", 555100200));
-        parquemundomarino.add(new Guia(16, "Rocio Sanchez", "Avenida Oceánica 45", 555300400));
+        parquemundomarino.add(new Guia(16, "Rocio Sanchez", "Avenida Oceanica 45", 555300400));
         parquemundomarino.add(new Cuidador(17, "Gaston Lopez", "Playa Principal 78", 555500600));
         parquemundomarino.add(new Cuidador(18, "Mariana Diaz", "Bahia Escondida 22", 555700800));
         parquemundomarino.add(new Administrador(19, "Pedro Gonzalez", "Puerto Principal 10", 555900100));
