@@ -21,4 +21,8 @@ class FilaAL {
     public ArrayList<String> getFilaAL() {
         return filaAL;
     }
+
+    public void modificar(int id, String valor) {
+        filaAL.set(id, valor);
+    }
 }
