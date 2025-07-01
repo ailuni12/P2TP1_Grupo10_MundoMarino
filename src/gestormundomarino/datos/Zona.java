@@ -17,7 +17,7 @@ public class Zona extends Dato {
     @Override
     public void mostrar() {
             System.out.printf(
-            "Zona ID %d: %s (Extension: %.2f km²)%n",
+            "Zona ID %d: %s (Extension: %.2f km)%n",
             identificar(),
             nombre,
             extension
