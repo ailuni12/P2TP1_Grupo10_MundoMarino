@@ -24,10 +24,10 @@ public class Habitat extends Dato {
     @Override
     public void mostrar() {
         System.out.printf(
-            "Hábitat ID %d: %s%n" +
+            "Habitat ID %d: %s%n" +
             "  Continente: %s%n" +
             "  Clima: %s%n" +
-            "  Vegetación: %s%n",
+            "  Vegetacion: %s%n",
             identificar(),
             nombre,
             continente,

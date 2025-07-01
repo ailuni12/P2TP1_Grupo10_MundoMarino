@@ -26,7 +26,7 @@ public class AtiendeA extends Dato {
     @Override
     public void mostrar() {
     System.out.printf(
-        "Relación ID %d: Animal (ID %d) es atendido por Cuidador (ID %d) desde %s%n",
+        "Relacion ID %d: Animal (ID %d) es atendido por Cuidador (ID %d) desde %s%n",
         identificar(),
         idAnimal,
         idCuidador,

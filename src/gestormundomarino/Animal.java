@@ -22,7 +22,7 @@ public class Animal extends Dato {
     @Override
     public void mostrar() {
         System.out.printf(
-            "Animal ID:%d, Nombre:%s, Especie:%d, Hábitat:%d",
+            "Animal ID:%d, Nombre:%s, Especie:%d, Habitat:%d",
             identificar(), nombre, idEspecie, idHabitat
         );
     }

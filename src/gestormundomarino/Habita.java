@@ -4,8 +4,8 @@ package gestormundomarino;
 //CLASE "RELACIONAL"
 
 public class Habita extends Dato {
-    public int idEspecie;
-    public int idHabitat;
+    private int idEspecie;
+    private int idHabitat;
 
     public Habita(int id, int idEspecie, int idHabitat) {
         super(id);
@@ -15,6 +15,11 @@ public class Habita extends Dato {
 
     @Override
     public void mostrar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.printf(
+            "Relacion ID %d: La especie (ID %d) reside en el habitat (ID %d)%n",
+            identificar(),
+            idEspecie,
+            idHabitat
+        );
     }
 }

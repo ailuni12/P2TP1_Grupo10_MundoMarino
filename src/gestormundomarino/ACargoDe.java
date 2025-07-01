@@ -26,7 +26,7 @@ public class ACargoDe extends Dato {
     @Override
     public void mostrar() {
         System.out.printf(
-            "Relación ID %d: Itinerario (ID %d) está a cargo de Guía (ID %d)%n",
+            "Relacion ID %d: Itinerario (ID %d) esta a cargo de Guia (ID %d)%n",
             identificar(),
             idItinerario,
             idGuia

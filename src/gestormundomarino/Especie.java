@@ -22,7 +22,7 @@ public class Especie extends Dato {
     public void mostrar() {
         System.out.printf(
             "Especie ID %d: %s (%s)%n" +
-            "  Descripción: %s%n",
+            "  Descripcion: %s%n",
             identificar(),
             nombre,
             nombreCientifico,

@@ -2,7 +2,7 @@ package gestormundomarino;
 
 import java.time.LocalDate;
 
-public abstract class Empleado extends Dato {
+public class Empleado extends Dato {
     private final String nombre;
     private final String direccion;
     private final int telefono;
@@ -13,15 +13,19 @@ public abstract class Empleado extends Dato {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
+        //para la fecha de ingreso se toma el momento de creacion del objeto
         this.fechaIngreso = LocalDate.now();
     }
 
-    // Getters - available to all subclasses
+    // Getters
     public String getNombre() { return nombre; }
     public String getDireccion() { return direccion; }
     public int getTelefono() { return telefono; }
     public LocalDate getFechaIngreso() { return fechaIngreso; }
 
     @Override
-    public abstract void mostrar();
+    public void mostrar() {
+        System.out.println("Empleado del parque.");
+    }
+
 }
