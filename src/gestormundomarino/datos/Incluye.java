@@ -1,6 +1,8 @@
 package gestormundomarino.datos;
 
 //Zona Incluye Habitat
+//CLASE "RELACIONAL"
+
 public class Incluye extends Dato {
     public int idZona;
     public int idHabitat;

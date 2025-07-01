@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class ManejadorAL {
     private Map<String, TablaAL> tablasAL;
-    
+
     public void alta(String nombreTabla, String nombreColumna, Dato dato) {
         int res;
         TablaAL tabla = tablasAL.get(nombreTabla);
@@ -26,7 +26,7 @@ public class ManejadorAL {
     public void baja(String nombreTabla, String nombreColumna, String id) {
         int res;
         TablaAL tabla = tablasAL.get(nombreTabla);
-        
+
         if(tabla != null) {// si se halló la tabla
             res = tabla.deleteFilaAL(id);// devuelve la cantidad de registros eliminados (para id, debería ser 1)
             if(res > 0) {
@@ -41,7 +41,7 @@ public class ManejadorAL {
     public void modif(String nombreTabla, String nombreColumna, String id, String valor) {
         int res;
         TablaAL tabla = tablasAL.get(nombreTabla);
-        
+
         if(tabla != null) {
             res = tabla.modificarCampo(nombreColumna, id, valor);
             if(res == 1){
@@ -51,7 +51,7 @@ public class ManejadorAL {
             System.out.println("No se halló la tabla.");
         }
     }
-    
+
     /**
      * Método que busca un valor (String) en una columna de una tabla (TablaAL).
      * 1- halla la tabla según su nombre.
