@@ -1,5 +1,6 @@
-package gestormundomarino;
+package gestormundomarino.datos.empleado;
 
+import gestormundomarino.datos.Dato;
 import java.time.LocalDate;
 
 public class Empleado extends Dato {

@@ -1,5 +1,5 @@
 //clase que relaciona habitat-zona-especie
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public class Animal extends Dato {
     public int idEspecie;

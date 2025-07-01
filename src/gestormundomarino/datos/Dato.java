@@ -1,5 +1,5 @@
 
-package gestormundomarino;
+package gestormundomarino.datos;
 
 public abstract class Dato {
     public int id;

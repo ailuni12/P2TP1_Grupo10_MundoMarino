@@ -1,13 +1,13 @@
-package gestormundomarino;
+package gestormundomarino.datos;
 
-//Zona Incluye Habitat
-public class Incluye extends Dato {
-    public int idZona;
+//Especie Habita Habitat
+public class Habita extends Dato {
+    public int idEspecie;
     public int idHabitat;
 
-    public Incluye(int id, int idZona, int idHabitat) {
+    public Habita(int id, int idEspecie, int idHabitat) {
         super(id);
-        this.idZona = idZona;
+        this.idEspecie = idEspecie;
         this.idHabitat = idHabitat;
     }
 
@@ -15,5 +15,4 @@ public class Incluye extends Dato {
     public void mostrar() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
 }

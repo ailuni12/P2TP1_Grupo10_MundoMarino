@@ -1,8 +1,10 @@
 
-package gestormundomarino;
+package gestormundomarino.manejadorbd;
+
+import gestormundomarino.Capacidad;
 
 
-public class ManejarDB implements Capacidad {
+public class ManejadorDB implements Capacidad {
 
     @Override
     public boolean login(String usuario, String contrasenia) {
