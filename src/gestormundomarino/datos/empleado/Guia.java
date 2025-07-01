@@ -9,7 +9,7 @@ public class Guia extends Empleado {
     @Override
     public void mostrar() {
         System.out.printf(
-            "Guía ID %d: %s%n" +
+            "Guia ID %d: %s%n" +
             "  Contacto: %s | Tel: %d%n" +
             "  Fecha ingreso: %s%n",
             identificar(),

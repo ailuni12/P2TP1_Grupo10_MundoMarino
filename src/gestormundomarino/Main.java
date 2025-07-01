@@ -25,7 +25,7 @@ public class Main {
 
         // habitats
         parquemundomarino.add(new Habitat(3, "Oceano Abierto", "Templado", "Algas marinas", "Antartida"));
-        parquemundomarino.add(new Habitat(4, "Costas Rocosas", "Frío", "Kelp", "Sudamerica"));
+        parquemundomarino.add(new Habitat(4, "Costas Rocosas", "Frio", "Kelp", "Sudamerica"));
         parquemundomarino.add(new Habitat(5, "Aguas Profundas", "Frio", "Plancton", "Global"));
 
         // especies
