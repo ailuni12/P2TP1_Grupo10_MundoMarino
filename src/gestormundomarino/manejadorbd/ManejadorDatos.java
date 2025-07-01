@@ -23,7 +23,7 @@ public class ManejadorDatos {
         }
     }
 
-    public void baja(String nombreLista, String nombreColumna, String id) {
+    public void baja(String nombreLista, String id) {
         int res;
         ListaDatos lista = listasDatos.get(nombreLista);
         
@@ -38,17 +38,18 @@ public class ManejadorDatos {
             System.out.println("No se halló la lista.");
         }
     }
-    public void modif(String nombreLista, String nombreColumna, String id, String valor) {
+
+    public void modif(String nombreLista, Dato original, Dato nuevo) {
         int res;
         ListaDatos lista = listasDatos.get(nombreLista);
         
         if(lista != null) {
-            res = lista.modificarCampo(nombreColumna, id, valor);
+            res = lista.modificarDato(original, nuevo);
             if(res == 1){
-                ;
+                System.out.println("Se reemplazó el dato correctamente.");;
             }
         } else {
-            System.out.println("No se halló la lista.");
+            System.out.println("No se halló el dato a reemplazar.");
         }
     }
     
@@ -60,26 +61,15 @@ public class ManejadorDatos {
      * 4- devuelve las datos halladas (un ArrayList de tipo Dato).
      * 
      * @param nombreLista nombre de la lista a consultar (ListaDatos)
-     * @param nombreColumna nombre de la columna en la que buscar (índice de 
-     *                      filaEncabezadoAL aplicado a datosAL)
-     * @param valor valor buscado que determina la(s) fila(s) a hallar (Dato)
+     * @param id id del dato a consultar
      * @return fila(s) hallada(s) o ArrayList vacío (ArrayList de Dato)
      */
-    public ArrayList<Dato> consulta(String nombreLista, String nombreColumna, String valor) {
+    public ArrayList<Dato> consulta(String nombreLista, String id) {
         ListaDatos lista = listasDatos.get(nombreLista);// **1**
-        ArrayList<String> encabezados = lista.getFilaEncabezadoAL();// **2**
-        int iEncabezado = encabezados.indexOf(nombreColumna);// **3**
-        ArrayList<Dato> datos = lista.getListaDato();
-        ArrayList<Dato> datosResultado = new ArrayList<>();
 
-        for (Dato fila : datos) {
-            if(fila.get(iEncabezado).equals(valor)) {
-                datosResultado.add(fila);
-            }
-        }
-        return datosResultado;// **4**
+        return lista.buscarDatos(id);// **4**
     }
-    public ArrayList<Dato> consulta(String nombreLista, String nombreColumna, Integer valor) {
-        return consulta(nombreLista, nombreColumna, valor.toString());
+    public ArrayList<Dato> consulta(String nombreLista, Integer valor) {
+        return consulta(nombreLista, valor.toString());
     }
 }

@@ -12,7 +12,7 @@ class ListaDatos {
         return nombre;
     }
 
-    public ArrayList<String> getFilaEncabezadoAL() {// adaptado de https://www.baeldung.com/java-reflection
+    public ArrayList<String> getNombresAtributos() {// adaptado de https://www.baeldung.com/java-reflection
         ArrayList<String> nombres = new ArrayList<>();
         Field[] campos = Dato.class.getDeclaredFields();
         for(Field campo : campos) {
@@ -35,27 +35,37 @@ class ListaDatos {
 
     public int eliminarDato(String id) {
         int i, res = 0;
-        for(i = 0; i < listaDatos.size(); i++) {       // recorrer listaDatos completo (para id no haría falta)
-            if(listaDatos.get(i).getId(0).equals(id)) {  // verificar su primer campo, id
-                listaDatos.remove(i);                  // eliminar el elemento de índice i
-                res++;                              // contar el número de elementos eliminados
+        for(i = 0; i < listaDatos.size(); i++) {// recorrer listaDatos completo (para id no haría falta)
+            if(listaDatos.get(i).identificar() == Integer.parseInt(id)) {// verificar su id
+                listaDatos.remove(i);// eliminar el elemento de índice i
+                res++;// contar el número de elementos eliminados
             }
         }
         return res;
     }
 
-    public int modificarCampo(String nombreColumna, String id, String valor) {
+    public int modificarDato(Dato original, Dato nuevo) {
         int i = 0, res = 0;
-        int idColumna = filaEncabezadoAL.indexOf(nombreColumna);// hallar el índice correspondiente a nombreColumna
-        Dato fila = null;
 
-        while(i < listaDatos.size() && res == 0) {     // recorrer listaDatos
-            fila = listaDatos.get(i);                  // obtener la fila de índice i
-            if(fila.get(0).equals(id)) {            // verificar su primer campo, id
-                fila.modificar(idColumna, valor);   // modificar el valor de fila en índice idColumma
+        i = listaDatos.indexOf(original);
+        if(listaDatos.remove(i) != null) {
+            listaDatos.add(i, nuevo);
+            if(listaDatos.contains(nuevo)){
                 res = 1;
             }
         }
+
         return res;
+    }
+
+    public ArrayList<Dato> buscarDatos(String id) {
+        ArrayList<Dato> datosRes = new ArrayList<>();
+
+        for(Dato dato : listaDatos) {
+            if(dato.identificar() == Integer.parseInt(id)) {
+                datosRes.add(dato);
+            }
+        }
+        return datosRes;
     }
 }
