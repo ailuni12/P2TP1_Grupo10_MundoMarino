@@ -7,7 +7,7 @@
 /target/
 
 # Package files
-*.jar
+#*.jar
 *.war
 *.ear
 *.zip
