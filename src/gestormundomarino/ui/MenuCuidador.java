@@ -1,12 +1,36 @@
 package gestormundomarino.ui;
 
-import java.util.List;
+import gestormundomarino.entradasalida.EntradaSalida;
+import gestormundomarino.manejadorbd.ManejadorBD;
 
+public class MenuCuidador implements MenuUsuario {
+    private final EntradaSalida iu;
+    private final ManejadorBD bd;
 
-public class MenuCuidador extends MenuEmpleado {
-
-    public MenuCuidador(String nombre, List opciones) {
-        super(nombre, opciones);
+    public MenuCuidador(EntradaSalida iu, ManejadorBD bd) {
+        this.iu = iu;
+        this.bd = bd;
     }
-    
+
+    @Override
+    public void mostrar() {
+        iu.mostrarMensaje("\n--- MENÚ CUIDADOR ---");
+        iu.mostrarMensaje("1. Ver animales a cargo\n2. Registrar alimentación\n3. Salir");
+
+        String opcion = iu.solicitarEntrada("Elija una opción");
+
+        switch (opcion) {
+            case "1":
+                iu.mostrarMensaje("Mostrando animales a cargo...");
+                break;
+            case "2":
+                iu.mostrarMensaje("Registrando alimentación...");
+                break;
+            case "3":
+                iu.mostrarMensaje("Saliendo del sistema...");
+                break;
+            default:
+                iu.mostrarMensaje("Opción no válida.");
+        }
+    }
 }

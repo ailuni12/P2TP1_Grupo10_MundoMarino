@@ -1,5 +1,5 @@
 package gestormundomarino.ui;
 
-public class Login {
+public interface Login {
     
 }

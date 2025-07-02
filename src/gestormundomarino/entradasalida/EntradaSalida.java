@@ -1,5 +1,6 @@
 package gestormundomarino.entradasalida;
 
-public class EntradaSalida {
-    
+public interface EntradaSalida {
+    void mostrarMensaje(String mensaje);
+    String solicitarEntrada(String mensaje);
 }
